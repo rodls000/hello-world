@@ -1,0 +1,63 @@
+<h1>WEB2 CSS</h1>
+
+< style>
+<br>
+a {
+<br>
+color:black;
+<br>
+text-decoration: none;
+<br>
+}
+<br>
+<br>
+h1 {
+<br>
+ font-size:45px;
+<br>
+ text-align: center;
+<br>
+}
+<br>
+#active{
+<br>
+color:red;
+<br>
+}
+<br>
+.saw {
+<br>
+color:gray;
+<br>
+}
+<br>
+< /style>
+<br><br>
+
+	< h1>< a href="index.html">리더소프트< /a></ h1>
+<br>
+		< li>< a href="1.html" class="saw">회사소개 < /a>< /li>
+<br>
+		< li>< a href="2.html" class="saw" id="active">초보가이드< /a>< /li>
+
+<br>
+
+<h4>핵심요약</h4>
+<ol>
+	<li>우선순위 반영 순서 : 태그선택자 < 클래스선택자 < ID선택자 </li>
+	<li>class="saw"로 클래스를 지정한다.</li>
+	<li>스타일 태그안에 지정한 클래스 앞에 점을 붙여준다 .saw</li>
+	<li>class="saw" id="active" 아이디 지정은 하나의 이름만 적용된다.</li>
+	<li>스타일 태그안에 지정한 아이디 앞에 샾을 붙여준다. #active</li>
+
+
+</ol>
+<h4>배운명령어</h4>
+<ol>
+	<li>스타일 태그 안에 지정한 클래스에 적용한다.</li>
+	<li> font-size:45px; 폰트의 크기를 설정한다.</li>
+	<li> text-align: center; 텍스트의 위치를 설정한다.</li>
+	<li> color:gray; 글씨의 색깔을 설정한다.</li>
+
+
+</ol>
