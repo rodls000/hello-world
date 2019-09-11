@@ -1,0 +1,27 @@
+UrlDownloadToFile, http://www.645lotto.net/main.asp,%A_ScriptDir%\data.txt
+result=
+loop,read,%A_ScriptDir%\data.txt
+{
+URLSearchString = %A_LoopReadLine%
+StringGetPos, URLStart, URLSearchString, ballN
+if URLStart <> -1
+{
+StringSplit, OutputArray, URLSearchString, .
+StringRight, Lnum, OutputArray1, 2
+result:= result Lnum " "
+}
+StringGetPos, URLStart, URLSearchString, /bonus
+if URLStart <> -1
+{
+StringSplit, OutputArray, URLSearchString, .
+StringRight, Lnum, OutputArray1, 2
+result:= result "+"
+}
+StringGetPos, URLStart, URLSearchString, spGRWDate
+if URLStart <> -1
+{
+Today:=SubStr(URLSearchString, URLStart+12, 10)
+result:=Today " = "
+}
+}
+msgbox %result%
